@@ -1,8 +1,11 @@
 <h1 align="center"> Nesse repositório estarei postando exercícios práticos de operadores em Java, sendo o primeiro deles uma Calculadora Simples. </h1>
+<p align="right"> <img src="https://komarev.com/ghpvc/?username=anacarolliny&label=Profile%20views&color=0e75b6&style=flat" alt="anacarolliny" /> </p>
+
 
 ## Projetos
-<p align="justify"> 
 
+<p align="justify"> 
+ <a align="left>"href="https://www.java.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a>
 <p>1. Calculadora Simples :heavy_check_mark:<p>
 2. Desconto de frete em compras acima de R$100,00 :warning:<p>
 3. Cálculo de gastos familiar :warning:<p>
