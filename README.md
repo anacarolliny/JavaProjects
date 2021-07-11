@@ -33,3 +33,4 @@ Com esses três valores: A escolha da operação e os dois números foi utilizad
 Curso que estou acompanhando para a execução deste projeto: [Curso Gratuito da Algaworks](https://www.algaworks.com/curso/logica-de-programacao-java/) 
 
 > **apenas um teste**
+> Ajudando a @anacarolliny com conflitos de merge.
