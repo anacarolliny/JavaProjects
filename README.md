@@ -33,6 +33,12 @@ Com esses três valores: A escolha da operação e os dois números foi utilizad
 Curso que estou acompanhando para a execução deste projeto: [Curso Gratuito da Algaworks](https://www.algaworks.com/curso/logica-de-programacao-java/) 
 
 > **apenas um teste**
-> 
-> 
+
+
 > Agora um teste de merge com conflitos com o @Idavid
+
+
+----------------------------------------------
+*Resolvendo o merge with conflicts*
+
+Minha resolução foi deixar apenas a linha de codigo do @idavidd, teste realizado com sucesso ! o/\o
