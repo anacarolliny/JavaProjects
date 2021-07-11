@@ -5,7 +5,7 @@
 ## Projetos
 
 <p align="justify"> 
- <a align="left>"href="https://www.java.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a>
+ <a align="left>" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a>
 <p>1. Calculadora Simples :heavy_check_mark:<p>
 2. Desconto de frete em compras acima de R$100,00 :warning:<p>
 3. Cálculo de gastos familiar :warning:<p>
@@ -33,3 +33,6 @@ Com esses três valores: A escolha da operação e os dois números foi utilizad
 Curso que estou acompanhando para a execução deste projeto: [Curso Gratuito da Algaworks](https://www.algaworks.com/curso/logica-de-programacao-java/) 
 
 > **apenas um teste**
+> 
+> 
+> Agora um teste de merge com conflitos com o @Idavid
