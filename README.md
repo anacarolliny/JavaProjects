@@ -25,3 +25,6 @@ Dicas de como estou organizando meu Readme [Aqui](https://dev.to/reginadiana/com
 O programa recebeu qual era a operação, depois recebeu o primeiro número e, por último, o segundo número.
 Para os números que foram recebidos pelo console, a funcionalidade usada foi *Scanner*. Para receber a operação você pode receber também um número que vai indicar a mesma. Por exemplo, o número 1 será adição, o 2 subtração, o 3 multiplicação e o 4 divisão.
 Com esses três valores: A escolha da operação e os dois números foi utilizada a estrutura de decisão if para só realizar a operação que escolhi.</p>
+
+
+Curso que estou acompanhando para a execução deste projeto: [Curso Gratuito da Algaworks](https://www.algaworks.com/curso/logica-de-programacao-java/) 
