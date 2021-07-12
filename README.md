@@ -2,9 +2,9 @@
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=anacarolliny&label=Profile%20views&color=0e75b6&style=flat" alt="anacarolliny" /> </p>
 
 
-![java imagem](https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg)
- ## Projetos 
-- [:heavy_check_mark:] Calculadora Simples.
+ ## Projetos <img width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"></img>
+ 
+- [X] Calculadora Simples.
 - [ ] Desconto de frete em compras acima de R$100,00.
 - [ ] Cálculo de gastos familiar.
 - [ ] Verificação da possibilidade de aposentadoria.
