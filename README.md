@@ -3,11 +3,20 @@
 
 
  ## Projetos <img width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"></img>
- 
+
+<p>Exercícios de Operadores</p>
 - [X] Calculadora Simples.
 - [ ] Desconto de frete em compras acima de R$100,00.
 - [ ] Cálculo de gastos familiar.
 - [ ] Verificação da possibilidade de aposentadoria.
+
+<p>Exercícios de Estrutura de Decisão</p>
+- [ ] Exercício 01: Verificar se a pessoa passou no concurso público.
+- [ ] Exercício 02: Calcule o bônus do funcionário(a).
+- [ ] Exercício 03: Imprima o nome do dia da semana (domingo, segunda-feira, etc.).
+
+[Página com a descrição de cada exercício](https://github.com/anacarolliny/JavaProjects/tree/master/CursoLogicaCapitulo04)
+
 
 > Status do Projeto: Em desenvolvimento :warning:
 ### Goals With this Projects 
@@ -28,14 +37,3 @@ Com esses três valores: A escolha da operação e os dois números foi utilizad
 
 
 Curso que estou acompanhando para a execução deste projeto: [Curso Gratuito da Algaworks](https://www.algaworks.com/curso/logica-de-programacao-java/) 
-
-> **apenas um teste**
-
-
-> Agora um teste de merge com conflitos com o @Idavid
-
-
-----------------------------------------------
-*Resolvendo o merge with conflicts*
-
-Minha resolução foi deixar apenas a linha de codigo do @idavidd, teste realizado com sucesso ! o/\o
