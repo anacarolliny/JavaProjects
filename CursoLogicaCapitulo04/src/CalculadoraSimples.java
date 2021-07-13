@@ -1,62 +1,101 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class CalculadoraSimples {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        boolean check = true;
-        Double resultado = null;
 
-        /*O metodo Do While é um loop que primeiro executa seu corpo e depois checa sua condição
-        caso a condição seja true ele refaz o procedimento de seu corpo até que a condição
-        seja false. nesse caso usamos o check para essa condição*/
-        do {
-            check = true;
-            System.out.print("Menu da Calculadora - Escolha qual operação a fazer " + "\n" +
-                    "Digite 1 para somar | 2  para subtrair | 3 para multiplicar | 4 para dividir  ");
-            Integer operacao = scanner.nextInt();
+        /*
+        * Um Map que armazena as chaves e valores das operações validas.
+        * Lembrando que um HashMap não preserva a ordem da inserção e não ordena automaticamente seus elementos.
+        * leia mais sobre HashMap em:
+        * https://stackoverflow.com/questions/43871017/are-the-hashmap-entries-always-sorted-by-key-if-the-key-is-of-type-integer
+        * https://www.funzen.net/po/2019/11/01/diferenca-entre-hashmap-e-linkedhashmap-em-java/
+        *
+        * Também está sendo utilizado a sintaxe de Double-Brace. O uso dessa sintaxe deve ser evitada por ser
+        * considerada um anti-padrão e possuir muitas desvantagens, estou usando para fins de demonstração.
+        *
+        * A sintaxe de Double-Brace nos permite a criação e inicialização em uma única instrução.
+        * exemplo:
+        *   sintaxe normal:
+        *       Map<Integer, String> operacoesValidas = new HashMap<>();
+        *       operacoesValidas.put(1, "somar");
+        *       operacoesValidas.put(2, "subtrair");
+        *       operacoesValidas.put(3, "multiplicar");
+        *       operacoesValidas.put(4, "dividir");
+        *
+        *
+        *    sintaxe Double-Brace:
+        *       Map<Integer, String> operacoesValidas = new HashMap<Integer, String>(){{
+        *           put(1, "somar");
+        *           put(2, "subtrair");
+        *           put(3, "multiplicar");
+        *           put(4, "dividir");
+        *       }};
+        *
+        *  mais sobre a sintaxe Double-Brace:
+        *   https://www.baeldung.com/java-double-brace-initialization
+        */
+        final Map<Integer, String> operacoesValidas = new HashMap<Integer, String>(4){{
+            put(3, "multiplicar");
+            put(2, "subtrair");
+            put(1, "somar");
+            put(4, "dividir");
+        }};
+        final int tamanhoDoMapDeOpcoes = operacoesValidas.size();
+        boolean whileAtivado = true;
+        double resultado = 0D;
 
-            System.out.println("Esse programa irá fazer uma simples operação com dois numeros");
-            System.out.print("Digite o primeiro numero: ");
-            Double primeiroNumero = scanner.nextDouble();
-            System.out.print("Digite o segundo numero: ");
-            Double segundoNumero = scanner.nextDouble();
+        while (whileAtivado){
+            System.out.println("Menu da Calculadora - Escolha qual operação a fazer\nDigite:");
 
-            /*O metodo switch recebe uma variavel e age conforme o seu valor nos cases.
-            Caso o valor inputado seja diferente dos valores válidos(input < 1 ou input > 4)
-            ele ativa o default com a mensagem de valor inválido. e atriubiu a variavel check o valor de false*/
-            switch (operacao) {
-                case (1): {
-                    resultado = primeiroNumero + segundoNumero;
-                    break;
+            operacoesValidas.forEach((chave, valor) -> {
+                /*
+                * Se a chave for menor que o tamanho do mapa de opções é adicionado uma barra para separar
+                * se não pula linha e mostra :
+                */
+                final String barraSeparadora = chave < tamanhoDoMapDeOpcoes ? " | " : "\n: ";
+                System.out.printf("%d para %s" + barraSeparadora, chave, valor);
+            });
+
+            // try-catch para lidar com valores não numéricos.
+            try {
+                final int opcaoDoUsuario = scanner.nextInt();
+
+                if(!operacoesValidas.containsKey(opcaoDoUsuario)) {
+                    System.out.println("Opção inválida. Por favor tente novamente!\n------");
+                    continue;
                 }
-                case (2): {
-                    resultado = primeiroNumero - segundoNumero;
-                    break;
+
+                System.out.println("Esse programa irá fazer uma simples operação com dois números.");
+                System.out.print("Digite o primeiro numero: ");
+                Double primeiroNumero = scanner.nextDouble();
+                System.out.print("Digite o segundo numero: ");
+                Double segundoNumero = scanner.nextDouble();
+
+                switch (opcaoDoUsuario){
+                    case 1:
+                        resultado = primeiroNumero + segundoNumero;
+                        break;
+                    case 2:
+                        resultado = primeiroNumero - segundoNumero;
+                        break;
+                    case 3:
+                        resultado = primeiroNumero * segundoNumero;
+                        break;
+                    case 4:
+                        resultado = primeiroNumero / segundoNumero;
+                        break;
                 }
-                case (3): {
-                    resultado = primeiroNumero * segundoNumero;
-                    break;
-                }
-                case (4): {
-                    resultado = primeiroNumero / segundoNumero;
-                    break;
-                }
-                default: {
-                    System.out.println("\n####ERROR####\n" +
-                            "Operação escolhida inválida. Escolha novamente" +
-                            "\n####ERROR####\n");
-                    check = false;
-                }
+
+                whileAtivado = false;
+            } catch (Exception error){
+                System.out.println("Por favor insira apenas valores validos.\n------");
             }
+        }
 
-            /*Uma variavel sozinha quando do tipo boolean dentro de uma condição é o mesmo que
-            perguntar se check == true. assim como tendo o sinal de ! antes desta variavel
-            é o mesmo que a condição perguntar se check == false. enquanto check for FALSE
-            esse loop se repetirá*/
-        }while(!check);
-
-        System.out.println("Resultado: " + resultado);
-
+        System.out.print("Resultado: " + resultado);
         scanner.close();
     }
 }
