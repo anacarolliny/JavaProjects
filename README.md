@@ -2,15 +2,12 @@
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=anacarolliny&label=Profile%20views&color=0e75b6&style=flat" alt="anacarolliny" /> </p>
 
 
-## Projetos
-
-<p align="justify"> 
- <a align="left>" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a>
-<p>1. Calculadora Simples :heavy_check_mark:<p>
-2. Desconto de frete em compras acima de R$100,00 :warning:<p>
-3. Cálculo de gastos familiar :warning:<p>
-4. Verificação da possibilidade de aposentadoria :warning:
-  </p>
+ ## Projetos <img width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"></img>
+ 
+- [X] Calculadora Simples.
+- [ ] Desconto de frete em compras acima de R$100,00.
+- [ ] Cálculo de gastos familiar.
+- [ ] Verificação da possibilidade de aposentadoria.
 
 > Status do Projeto: Em desenvolvimento :warning:
 ### Goals With this Projects 
