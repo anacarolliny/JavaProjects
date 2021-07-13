@@ -33,4 +33,6 @@ public class CalculadoraSimples {
 
         scanner.close();
     }
+
+    // ESSE É UM TESTE DO GUILHERMEBDP
 }
